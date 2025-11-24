@@ -1,0 +1,18 @@
+alert tcp any any -> any 22 SSH Access Alert
+alert tcp any any -> any 80 HTTP Access Alert
+alert tcp any any -> any 443 HTTPS Access Alert
+alert tcp any any -> any 3306 MySQL Access Alert
+alert tcp any any -> any 5432 PostgreSQL Access Alert
+alert tcp any 8080 -> any any Proxy Alert
+alert udp any any -> any 67 DHCP Server Alert
+alert udp any 123 -> any any NTP Request Alert
+alert udp any 514 -> any any Syslog Alert
+alert udp any any -> any 161 SNMP Request Alert
+alert udp any any -> any 162 SNMP Trap Alert
+alert tcp any any -> any 445 SMB Access Alert
+alert udp any 53 -> any any DNS Query Alert
+alert tcp any 80 -> any any Malicious HTTP Request Alert
+alert tcp any 25 -> any any SMTP Alert
+alert tcp any 110 -> any any POP3 Alert
+alert tcp any 143 -> any any IMAP Alert
+alert tcp any 3389 -> any any RDP Access Alert
